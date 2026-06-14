@@ -104,7 +104,22 @@ TEMPLATES: dict[str, dict] = {
         "killable": True,
         
     },
-    
+    "Evil weiner dog": {
+        "name": "Leroy",
+        "key_words": ("roy","le","leroy"),
+        "room_description": "The Leroy stands here ready to fight.",
+        "description": (
+            "The Leroy is a evil weiner dog and might eat you alive.\n"
+        ),
+        "race": "dachsund",
+        "class": "Weiner dog",
+        "level":  100,
+        "stats": [60, 65, 60, 80, 70, 75],
+        "aggro": True,
+        "wander": True,
+        "killable": True,
+        
+    },
 }
 # Module-level spawn — rooms.py calls  M.spawn("void_guardian")
 spawn = make_spawner(TEMPLATES, lambda: Mob)
